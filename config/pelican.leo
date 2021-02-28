@@ -56,7 +56,9 @@
 <v t="leo.20170710022041.1"><vh>@path markdown</vh>
 <v t="leo.20180115115910.1"><vh>2020</vh>
 <v t="leo.20180423103639.1"><vh>2020 Fall CP 課程</vh>
-<v t="leo.20180423103656.1"><vh>@edit 20200813.md</vh></v>
+<v t="leo.20180423103656.1"><vh>@clean 20210228.md</vh>
+<v t="leo.20210228220451.1"><vh>newHeadline</vh></v>
+</v>
 </v>
 </v>
 </v>
@@ -88,6 +90,27 @@ g.es("admin pelican Github 執行完畢")
 <t tx="leo.20180115093726.1"></t>
 <t tx="leo.20180115115910.1"></t>
 <t tx="leo.20180423103639.1"></t>
+<t tx="leo.20180423103656.1">@language md
+---
+Title: 2021 Fall CP 課程
+Date: 2021-02-28 11:00
+Category: Misc
+Tags: 2021FallCP
+Slug: 2021-Fall-Intro-to-computer-programming
+Author: 40823232
+---
+
+2021 Fall 計算機程式的教學主要介紹 Python 與 Flutter 在機械設計流程中的應用.
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+@others
+
+</t>
+<t tx="leo.20210228220451.1">python
+----
+python
+@others</t>
 <t tx="yen.20170108171605.1"></t>
 <t tx="yen.20170108171605.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/
