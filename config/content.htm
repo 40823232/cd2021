@@ -86,7 +86,7 @@
 <p><a href="https://40823213.github.io/stage2-bg2/downloads/%E6%94%AF%E6%9E%B64-17%E7%B8%AE%E5%B0%8F%E7%90%83%E9%AB%94.ipt">支架4-17縮小球體.ipt</a></p>
 <p><a href="https://40823213.github.io/stage2-bg2/downloads/3d%E5%87%B8%E8%BC%AA4-16(%E7%AC%AC%E4%B8%89%E6%94%B9%E6%B3%95).ipt">3d凸輪4-16(第三改法).ipt</a></p>
 <h2>w8</h2>
-<p>建立heroku</p>
+<p>建立heroku(教學在note裡)</p>
 <p>heroku:<a class="hk-link" href="https://s40823232.herokuapp.com/" target="_blank">https://s40823232.herokuapp.com/</a></p>
 <h2>w9報告</h2>
 <p>小組報告影片</p>
@@ -290,6 +290,18 @@ else:
 <p><img alt="" height="222" src="https://40823232.github.io/stage1-bg20/images/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202021-03-14%20162401.png" width="430"/></p>
 <p><img alt="" height="220" src="https://40823232.github.io/stage1-bg20/images/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202021-03-14%20162329.png" width="430"/></p>
 <p>要將兩物體綁在一起時，要按apply to selection(旋轉和移動)</p>
+<h2>heroku</h2>
+<p>先到<a href="https://heroku.com/">heroku</a>建立帳號，<span>以s+學號建立第個app(https://s學號.herokuapp.com)，之後</span></p>
+<p><span>下載<a href="https://40823245.github.io/cd2021/downloads/heroku.7z">heroku</a>，放在data裡，並在start_ipv4.bat裡新增路徑</span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">set path_heroku=%Local%\heroku\bin;
+ 
+%path_heroku%;</pre>
+<p>關掉重開後，輸入</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">heroku version</pre>
+<p>再進到自己組別的資料夾，輸入</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">git remote add heroku https://git.heroku.com/s40823232.git</pre>
+<p>輸入完後可以在.git的config會看到<img alt="" height="733" src="/images/螢幕擷取畫面 2021-05-16 140159.jpg" width="562"/></p>
+<p>如果資料夾不是最新的檔案要先git pull，之後打heroku login -i，輸入heroku帳號的email和密碼，再打<span>git push heroku(以後push前資料夾不是最新的檔案都要先git pull)</span></p>
 <h1>W5</h1>
 <p>乙班影片表格</p>
 <p><iframe height="650" iframe="" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSYuENMShUqmueGJx7ol7iUW-6mSEY6VoPomTA76j5OysLtu-f53d-UvZgNmXcy4IzQugDd6_GAsfbn/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="400"></iframe></p>

@@ -1,12 +1,16 @@
 <h1>About</h1>
-<p>stage1-bg20</p>
-<p>組員:40823213,40823232</p>
-<p>stage1組別網站:<a href="https://40823232.github.io/stage1-bg20/content/index.html" rel="nofollow">https://40823232.github.io/stage1-bg20/content/index.html</a></p>
-<p>stage1 gitter:<a href="https://gitter.im/2020bg5/stage1-bg20">https://gitter.im/2020bg5/stage1-bg20</a></p>
-<p>stage2-bg2</p>
-<p>組員:40823213,40823232,40823234,40823235</p>
-<p><span>stage2組別網站:<a href="https://40823232.github.io/stage2-bg2/content/index.html">https://40823232.github.io/stage2-bg2/content/index.html</a></span></p>
-<p><span>stage2 gitter:<a href="https://gitter.im/stage2-bg2/community">https://gitter.im/stage2-bg2/community</a></span></p>
+<p><strong>stage1-bg20</strong></p>
+<p><strong>組員:40823213,40823232</strong></p>
+<p><strong>stage1組別網站:<a href="https://40823232.github.io/stage1-bg20/content/index.html" rel="nofollow">https://40823232.github.io/stage1-bg20/content/index.html</a></strong></p>
+<p><strong>stage1 gitter:<a href="https://gitter.im/2020bg5/stage1-bg20">https://gitter.im/2020bg5/stage1-bg20</a></strong></p>
+<p><strong>stage2-bg2</strong></p>
+<p><strong>組員:40823213,40823232,40823234,40823235</strong></p>
+<p><strong>stage2組別網站:<a href="https://40823232.github.io/stage2-bg2/content/index.html">https://40823232.github.io/stage2-bg2/content/index.html</a></strong></p>
+<p><strong>stage2 gitter:<a href="https://gitter.im/stage2-bg2/community">https://gitter.im/stage2-bg2/community</a></strong></p>
+<p><strong>stage3-bg1</strong></p>
+<p><strong>組員:40823208,40823213,40823232,40823234,40823235,40823245,40823246,40823251</strong></p>
+<p><strong>stage3組別網站:<a href="https://40823232.github.io/stage3-bg1/content/index.html">https://40823232.github.io/stage3-bg1/content/index.html</a></strong></p>
+<p><strong>stage3 gitter:<a href="https://gitter.im/stage3-bg1/community">https://gitter.im/stage2-bg2/community</a></strong></p>
 <h1>stage1各週進度</h1>
 <p>建立網站並分配組員工作</p>
 <h2>w1</h2>
@@ -286,6 +290,18 @@ else:
 <p><img alt="" height="222" src="https://40823232.github.io/stage1-bg20/images/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202021-03-14%20162401.png" width="430"/></p>
 <p><img alt="" height="220" src="https://40823232.github.io/stage1-bg20/images/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202021-03-14%20162329.png" width="430"/></p>
 <p>要將兩物體綁在一起時，要按apply to selection(旋轉和移動)</p>
+<h2>heroku</h2>
+<p>先到<a href="https://heroku.com/">heroku</a>建立帳號，<span>以s+學號建立第個app(https://s學號.herokuapp.com)，之後</span></p>
+<p><span>下載<a href="https://40823245.github.io/cd2021/downloads/heroku.7z">heroku</a>，放在data裡，並在start_ipv4.bat裡新增路徑</span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">set path_heroku=%Local%\heroku\bin;
+ 
+%path_heroku%;</pre>
+<p>關掉重開後，輸入</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">heroku version</pre>
+<p>再進到自己組別的資料夾，輸入</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">git remote add heroku https://git.heroku.com/s40823232.git</pre>
+<p>輸入完後可以在.git的config會看到<img alt="" height="733" src="/images/螢幕擷取畫面 2021-05-16 140159.jpg" width="562"/></p>
+<p>如果資料夾不是最新的檔案要先git pull，之後打heroku login -i，輸入heroku帳號的email和密碼，再打<span>git push heroku(以後push前資料夾不是最新的檔案都要先git pull)</span></p>
 <h1>W5</h1>
 <p>乙班影片表格</p>
 <p><iframe height="650" iframe="" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSYuENMShUqmueGJx7ol7iUW-6mSEY6VoPomTA76j5OysLtu-f53d-UvZgNmXcy4IzQugDd6_GAsfbn/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="400"></iframe></p>
