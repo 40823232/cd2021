@@ -306,8 +306,7 @@ else:
 <p><img alt="" height="733" src="/images/螢幕擷取畫面 2021-05-16 140159.jpg" width="562"/></p>
 <p>如果資料夾不是最新的檔案要先git pull，之後打heroku login -i，輸入heroku帳號的email和密碼，再打<span>git push heroku(以後push前資料夾不是最新的檔案都要先git pull)</span></p>
 <h2>ssh</h2>
-<p>在sh.exe創好金鑰，打ssh-keygen -t rsa -b 4096 -C "學號"，輸入要放的位置，按enter，在</p>
-<p>start_ipv4.bat新增</p>
+<p>在sh.exe創好金鑰，打ssh-keygen -t rsa -b 4096 -C "學號"，輸入要放的位置，按enter，在start_ipv4.bat新增</p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">set GIT_HOME=%Disk%:\Portablegit\bin\
 set GIT_SSH=%Disk%:\putty\plink.exe</pre>
 <p>在.git的config新增url = git@github.com:40823232/cd2021.git，打開<span>puttygen.exe的</span><span>load，找到id_rsa，s</span><span>ave private key</span></p>
