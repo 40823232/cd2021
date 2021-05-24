@@ -106,7 +106,7 @@
 <p><img alt="" height="236" src="https://40823213.github.io/stage2-bg2/images/4-22-2.PNG" width="500"/></p>
 <p>4.講解影片</p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" data-mce-fragment="1" frameborder="0" height="300" src="https://www.youtube.com/embed/gG0rgduvdMY" title="YouTube video player" width="500"></iframe></p>
-<p><strong><a href="https://40823213.github.io/stage2-bg2/downloads/%E7%B5%84%E5%90%88.iam">組合</a>  <a href="/downloads/組合1.stl">組合.stl</a></strong></p>
+<p><strong><a href="/downloads/4-16.ttt">模擬.ttt</a>  <a href="/downloads/組合1.stl">組合.stl</a></strong></p>
 <p>參考資料</p>
 <p><a href="https://www.evget.com/article/2020/8/13/37561.html">https://www.evget.com/article/2020/8/13/37561.html</a></p>
 <p><a href="https://www.youtube.com/watch?v=s5O9_Ny9ufA">https://www.youtube.com/watch?v=s5O9_Ny9ufA</a></p>
@@ -251,7 +251,22 @@ if clientID != -1:
 
 else:
     print ('Failed connecting to remote API server')</pre>
-<p><br/><br/></p>
+<h2>w13建立gitlab</h2>
+<p>因為個人github遭到封鎖，故建立gitlab</p>
+<p>在網頁搜尋gitlab sign up建立自己的帳號，並建立倉儲</p>
+<p><img alt="" height="391" src="/images/螢幕擷取畫面 2021-05-24 113343.png" width="800"/></p>
+<p>倉儲要設為public且Initialize repository with a README不要打勾。</p>
+<p>到黑窗的倉儲輸入git branch查看分支狀態，再到倉儲跟目錄找出.gitlab-ci.yml用白窗打開將master改成main</p>
+<p><img alt="" height="652" src="/images/螢幕擷取畫面 2021-05-24 113914.png" width="500"/></p>
+<p>save完後acp再輸入</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">git remote add gitlab https://gitlab.com/40823232/倉儲名.git
+</pre>
+<p>然後git push gitlab。到gitlab確定有推上去(commit會打勾)，再到setting的page重整會有出現網址</p>
+<p><img alt="" height="388" src="/images/螢幕擷取畫面 2021-05-24 115408.png" width="800"/></p>
+<p>該網址為網站連結。</p>
+<p>ssh做法與之前相同，但putty要新增一個gitlab.com到auth選擇鑰匙</p>
+<p><img alt="" height="442" src="/images/螢幕擷取畫面 2021-05-24 115814.png" width="452"/></p>
+<p><img alt="" height="442" src="/images/螢幕擷取畫面 2021-05-24 115833.png" width="452"/></p>
 <h1>note</h1>
 <p>課堂問題整理</p>
 <h2>zoomit</h2>
@@ -284,15 +299,15 @@ else:
 <p><span><img alt="" height="463" src="/images/螢幕擷取畫面 2021-03-01 105402.png" width="450"/></span></p>
 <p><span>執行完畢後，add,commit,push</span></p>
 <h2>coppeliasim</h2>
-<p><img alt="" height="591" src="https://40823232.github.io/stage1-bg20/images/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202021-03-14%20161342.png" width="430"/></p>
+<p><img alt="" height="591" src="/images/螢幕擷取畫面 2021-03-14 161342.png" width="430"/></p>
 <p>如果要讓零件產生碰撞要開啟respondable，上排表示同個基準的零件碰撞，下排是任何基準的零件碰撞</p>
 <p>要讓零件動就要開啟dynamic</p>
-<p><img alt="" height="611" src="https://40823232.github.io/stage1-bg20/images/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202021-03-14%20161407.png" width="430"/></p>
+<p><img alt="" height="611" src="/images/螢幕擷取畫面 2021-03-14 161407.png" width="430"/></p>
 <p>如果要將物件隱藏要把camera visibility layers給取消</p>
-<p><img alt="" height="496" src="https://40823232.github.io/stage1-bg20/images/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202021-03-14%20162238.png" width="526"/></p>
+<p><img alt="" height="496" src="/images/螢幕擷取畫面 2021-03-14 162238.png" width="526"/></p>
 <p>這是將組合圖拆解，方便對各零件操作</p>
-<p><img alt="" height="222" src="https://40823232.github.io/stage1-bg20/images/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202021-03-14%20162401.png" width="430"/></p>
-<p><img alt="" height="220" src="https://40823232.github.io/stage1-bg20/images/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202021-03-14%20162329.png" width="430"/></p>
+<p><img alt="" height="220" src="/images/螢幕擷取畫面 2021-03-14 162329.png" width="430"/></p>
+<p><img alt="" height="222" src="/images/螢幕擷取畫面 2021-03-14 162401.png" width="430"/></p>
 <p>要將兩物體綁在一起時，要按apply to selection(旋轉和移動)</p>
 <h2>heroku</h2>
 <p>先到<a href="https://heroku.com/">heroku</a>建立帳號，<span>以s+學號建立一個app(https://s學號.herokuapp.com)，之後</span></p>
