@@ -324,8 +324,21 @@ else:
 <p>開啟字幕</p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/J-hOQjeMXDo" title="YouTube video player" width="560"></iframe></p>
 <p>中文字幕:</p>
-<p>在這裡，我們有與前一篇相同的兩連桿機械手臂，但這次我們將使用分析方法來解決它，意味著我們將更多地依賴代數，特別是使用線性代數而不是幾何。<br/>我們有一個表達式 E，它是表示機械手臂最終位置的齊次變換式，我們在上一課中看到了這一點，我們可以將最終位置寫為一系列基本齊次變換式。<br/>Q1 旋轉，A1 沿 X 方向平移，Q2 旋轉，然後 A2 沿 X 方向平移。<br/>如果我將其展開，將所有變換相乘，就會得到此處所示的表達式 E ;它是一個三乘三的齊次變換矩陣，表示機械手臂的最終的位置。<br/>現在對於這個特殊的兩連桿機器人，我們只對它的最終位置感興趣，與它有關的是 X 和 Y 坐標，它們是齊次變換矩陣中的這兩個元素，所以我將把它們複製出來。<br/>所以這裡又是我們對 X 和 Y 的表達式，我們要做的是一個相當常見的技巧，我們要將它平方並將這兩個方程相加，我得到一個看起來像這樣的關係式。<br/>現在我可以根據最終位置X和Y以及機械手臂的常數A1及A2來求出關節角度Q2。<br/>現在我要做的是應用角度之和的特性。<br/>我將展開這些項，Q1 的正弦加 Q2 或 Q1 的餘弦加 Q2，為了讓生活更輕鬆一點，我將建立一些分部，所以只要有 cos Q2，我會將其取代為C2並且在有正弦Q2的地方，我會將其取代為S2。<br/>當人們解決機械手臂運動學方程式時，這是一個相當常見的快速記法。<br/>這是進行替換後的方程式。<br/>看看這兩個方程式，我可以看到它們屬於一個眾所周知的形式，對於這種形式，有一個淺顯易見的解決方案。<br/>所以我將只考慮其中一個方程，Y 的方程，並使用我們眾所周知的恆等式和它的解，我可以確定變量小 a、小 b 和小 c 的值，一旦我確定了這些，然後我可以寫下 Q1 的解決方程，在這種特殊情況下，x 相當於 theta。</p>
-<p>這裡再次是我們對 Q1 的表達，從上一張幻燈片複製過來，我們可能還記得在我們早期的說明中，確定了這種特殊關係； X 平方加 Y 平方等於這個特定的複雜表達式。<br/>因此，我可以將其替換並進行一些簡化，最終得到 Q1 的這個稍微不那麼複雜的表達式。<br/>這與我在上一節中遵循幾何方法求出的表達式一模一樣。</p>
+<p>在這裡，我們有與前一篇相同的兩連桿機械手臂，但這次我們將使用分析方法來解決它，意味著我們將更多地依賴代數，特別是使用線性代數而不是幾何。</p>
+<p>我們有一個表達式 E，它是表示機械手臂最終位置的齊次變換式，我們在上一課中看到了這一點，我們可以將最終位置寫為一系列基本齊次變換式。</p>
+<p>Q1 旋轉，A1 沿 X 方向平移，Q2 旋轉，然後 A2 沿 X 方向平移。<br/>如果我將其展開，將所有變換相乘，就會得到此處所示的表達式 E ;它是一個三乘三的齊次變換矩陣，表示</p>
+<p>機械手臂的最終的位置。</p>
+<p>現在對於這個特殊的兩連桿機器人，我們只對它的最終位置感興趣，與它有關的是 X 和 Y 坐標，它們是齊次變換矩陣中的這兩個元素，所以我將把它們複製出來。</p>
+<p>所以這裡又是我們對 X 和 Y 的表達式，我們要做的是一個相當常見的技巧，我們要將它平方並將這兩個方程相加，我得到一個看起來像這樣的關係式。</p>
+<p>現在我可以根據最終位置X和Y以及機械手臂的常數A1及A2來求出關節角度Q2。</p>
+<p>現在我要做的是應用角度之和的特性。</p>
+<p>我將展開這些項，Q1 的正弦加 Q2 或 Q1 的餘弦加 Q2，為了讓生活更輕鬆一點，我將建立一些分部，所以只要有 cos Q2，我會將其取代為C2並且在有正弦Q2的地方，我會將其取代為S2。</p>
+<p>當人們解決機械手臂運動學方程式時，這是一個相當常見的快速記法。</p>
+<p>這是進行替換後的方程式。</p>
+<p>看看這兩個方程式，我可以看到它們屬於一個眾所周知的形式，對於這種形式，有一個淺顯易見的解決方案。</p>
+<p>所以我將只考慮其中一個方程，Y 的方程，並使用我們眾所周知的恆等式和它的解，我可以確定變量小 a、小 b 和小 c 的值，一旦我確定了這些，然後我可以寫下 Q1 的解決方程，在這種特殊情況下，x 相當於 theta。</p>
+<p>這裡再次是我們對 Q1 的表達，從上一張幻燈片複製過來，我們可能還記得在我們早期的說明中，確定了這種特殊關係； X 平方加 Y 平方等於這個特定的複雜表達式。</p>
+<p>因此，我可以將其替換並進行一些簡化，最終得到 Q1 的這個稍微不那麼複雜的表達式。<br/>這與我在上一節中遵循幾何方法求出的表達式一模一樣。</p>
 <h2>W16 exam</h2>
 <p><span>google drive連結:</span><a href="https://drive.google.com/drive/folders/1yGLWRymmOfIucmTXto5U4iZMExDvs5NC?usp=sharing" rel="nofollow">https://drive.google.com/drive/folders/1yGLWRymmOfIucmTXto5U4iZMExDvs5NC?usp=sharing</a></p>
 <p><span>1.Onshape 零組件繪製</span></p>
@@ -335,10 +348,215 @@ else:
 <p><span>3.手臂末端加入 components-gripper-suction pad 吸盤</span></p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/O10io1oBJyE" title="YouTube video player" width="560"></iframe></p>
 <p><span>方向鍵控制手臂，3:吸取 4:吸盤向上 5:放下</span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">function sysCall_init()
+    Revolute_joint=sim.getObjectHandle('Revolute_joint')
+    Revolute_joint1=sim.getObjectHandle('Revolute_joint1')
+    Prismatic_joint=sim.getObjectHandle('Prismatic_joint')
+    Revolute_joint0=sim.getObjectHandle('Revolute_joint0')
+    sim.setJointTargetPosition(Revolute_joint,0)
+    sim.setJointTargetPosition(Revolute_joint1,0)
+    sim.setJointTargetPosition(Revolute_joint0,0)
+    sim.setJointTargetPosition(Prismatic_joint,0)
+    deg1=0
+    deg2=0
+    deg3=0
+end
+
+function sysCall_actuation()
+    message,auxiliaryData=sim.getSimulatorMessage()
+    while message~=-1 do
+        if (message==sim.message_keypress) then
+            if (auxiliaryData[1]==2009) then
+            deg1=deg1+1
+            deg3=deg2-deg1
+            sim.setJointTargetPosition(Revolute_joint,deg1*math.pi/180)
+            end
+            if (auxiliaryData[1]==2010) then
+            deg1=deg1-1
+            deg3=deg2-deg1
+            sim.setJointTargetPosition(Revolute_joint,deg1*math.pi/180)
+            end
+            if (auxiliaryData[1]==2007) then
+            deg2=deg2+1
+            deg3=deg1-deg2
+            sim.setJointTargetPosition(Revolute_joint1,deg2*math.pi/180)
+            end
+            if (auxiliaryData[1]==2008) then
+            deg2=deg2-1
+            deg3=deg1-deg2
+            sim.setJointTargetPosition(Revolute_joint1,deg2*math.pi/180)
+            end
+            if (auxiliaryData[1]==51) then
+                sim.setJointTargetPosition(Prismatic_joint,-0.055)
+                sim.setIntegerSignal("pad_switch",1)
+            end
+            if(auxiliaryData[1]==52) then
+                sim.setJointTargetPosition(Prismatic_joint,0)
+            end
+            if(auxiliaryData[1]==53) then
+                sim.setIntegerSignal("pad_switch",0)
+            end
+            sim.setJointTargetPosition(Revolute_joint0,deg3*math.pi/180)
+        end
+    message,auxiliaryData=sim.getSimulatorMessage()
+    end
+end
+</pre>
 <p><span>4.逆向運動學函式</span></p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/cbeIsag9Y5M" title="YouTube video player" width="560"></iframe></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">function moving(x,y)  
+    a=0.467
+    b=0.401
+    c=math.pow(math.pow(x,2)+math.pow(y,2),0.5)
+    s=(a+b+c)*0.5
+    area=math.pow((s*(s-a)*(s-b)*(s-c)),0.5)
+    h=area/(2*c)
+    deg1_base=math.atan(x/y)
+    if x&lt;0 and y&lt;0 then
+        deg1_base=deg1_base+math.pi
+    end
+    deg1_tri=math.asin(h/a)
+    deg1=deg1_base+deg1_tri
+    deg2=math.pi-(0.5*math.pi-deg1_tri)-math.acos(h/b)
+    deg3=deg2-deg1
+    print(deg3)
+    sim.setJointTargetPosition(Revolute_joint,deg1)
+    sim.setJointTargetPosition(Revolute_joint1,-deg2)
+    sim.setJointTargetPosition(Revolute_joint0,deg3)
+    
+end
+
+function pick_and_place(x,y)
+    sim.setIntegerSignal("pad_switch",0)
+    sim.wait(t)
+    moving(0,0.868)
+    sim.wait(t)
+    moving(x,y)
+    sim.wait(t)
+    sim.setIntegerSignal("pad_switch",1)
+    sim.setJointTargetPosition(Prismatic_joint,-0.055)
+    sim.wait(t)
+    sim.setJointTargetPosition(Prismatic_joint,0)
+    sim.wait(t)
+end
+
+function sysCall_threadmain()
+    t=5
+    Revolute_joint=sim.getObjectHandle('Revolute_joint')
+    Revolute_joint1=sim.getObjectHandle('Revolute_joint1')
+    Prismatic_joint=sim.getObjectHandle('Prismatic_joint')
+    Revolute_joint0=sim.getObjectHandle('Revolute_joint0')
+    sim.setJointTargetPosition(Revolute_joint,0)
+    sim.setJointTargetPosition(Revolute_joint1,0)
+    sim.setJointTargetPosition(Revolute_joint0,0)
+    sim.setIntegerSignal("pad_switch",1)
+    sim.setJointTargetPosition(Prismatic_joint,-0.055)
+    sim.wait(t)
+    sim.setJointTargetPosition(Prismatic_joint,0)
+    sim.wait(t)
+    while sim.getSimulationState()~=sim.simulation_advancing_abouttostopre do
+        x=0.2
+        y=0.7
+        moving(x,y)
+        sim.wait(t)
+        pick_and_place(x,y)
+        x=-0.3
+        y=-0.55
+        moving(x,y)
+        sim.wait(t)
+        pick_and_place(x,y)
+    end
+end</pre>
 <p><span>5.Python remote API 逆向運動學函式</span></p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/5uZlng56JaU" title="YouTube video player" width="560"></iframe></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import sim as vrep
+import math
+import random
+import time
+import math
+
+def moving(x,y):
+    a=0.467
+    b=0.401
+    c=math.pow(math.pow(x,2)+math.pow(y,2),0.5)
+    s=(a+b+c)*0.5
+    area=math.pow((s*(s-a)*(s-b)*(s-c)),0.5)
+    h=area/(2*c)
+    deg1_base=math.atan(x/y)
+    if x&lt;0 and y&lt;0 :
+        deg1_base=deg1_base+math.pi
+    deg1_tri=math.asin(h/a)
+    deg1=deg1_base+deg1_tri
+    deg2=math.pi-(0.5*math.pi-deg1_tri)-math.acos(h/b)
+    deg3=deg2-deg1
+    vrep.simxSetJointTargetPosition(clientID,Revolute_joint,deg1,opmode)
+    vrep.simxSetJointTargetPosition(clientID,Revolute_joint1,(-deg2),opmode)
+    vrep.simxSetJointTargetPosition(clientID,Revolute_joint0,deg3,opmode)
+
+def pick_and_place(x,y):
+    vrep.simxSetIntegerSignal(clientID,"pad_switch",0,opmode)
+    time.sleep(tt)
+    moving(0,0.868)
+    time.sleep(tt)
+    moving(x,y)
+    time.sleep(tt)
+    vrep.simxSetIntegerSignal(clientID,"pad_switch",1,opmode)
+    vrep.simxSetJointTargetPosition(clientID,Prismatic_joint,-0.055,opmode)
+    time.sleep(tt)
+    vrep.simxSetJointTargetPosition(clientID,Prismatic_joint,0,opmode)
+    time.sleep(tt)
+
+
+
+print ('Start')
+ 
+vrep.simxFinish(-1)
+ 
+clientID = vrep.simxStart('192.168.0.9', 19997, True, True, 5000, 5)
+  
+if clientID != -1:
+    print ('Connected to remote API server')
+      
+    res = vrep.simxAddStatusbarMessage(
+        clientID, "40823232",
+        vrep.simx_opmode_oneshot)
+    if res not in (vrep.simx_return_ok, vrep.simx_return_novalue_flag):
+        print("Could not add a message to the status bar.")
+  
+     
+    opmode = vrep.simx_opmode_oneshot_wait
+    STREAMING = vrep.simx_opmode_streaming
+  
+     
+    vrep.simxStartSimulation(clientID, opmode)
+    ret,Revolute_joint=vrep.simxGetObjectHandle(clientID,"Revolute_joint",opmode)
+    ret,Revolute_joint1=vrep.simxGetObjectHandle(clientID,"Revolute_joint1",opmode)
+    ret,Revolute_joint0=vrep.simxGetObjectHandle(clientID,"Revolute_joint0",opmode)
+    ret,Prismatic_joint=vrep.simxGetObjectHandle(clientID,"Prismatic_joint",opmode)
+    tt=0.5
+ 
+
+    while True :
+        vrep.simxSetJointTargetPosition(clientID,Revolute_joint,0,opmode)
+        vrep.simxSetJointTargetPosition(clientID,Revolute_joint1,0,opmode)
+        vrep.simxSetJointTargetPosition(clientID,Revolute_joint0,0,opmode)
+        vrep.simxSetJointTargetPosition(clientID,Prismatic_joint,-0.055,opmode)
+        vrep.simxSetIntegerSignal(clientID,"pad_switch",1,opmode)
+        time.sleep(tt)
+        vrep.simxSetJointTargetPosition(clientID,Prismatic_joint,0,opmode)
+        time.sleep(tt)
+        while True:
+            x=0.2
+            y=0.7
+            moving(x,y)
+            time.sleep(tt)
+            pick_and_place(x,y)
+            x=-0.3
+            y=-0.55
+            moving(x,y)
+            time.sleep(tt)
+            pick_and_place(x,y)
+</pre>
 <h1>note</h1>
 <p>課堂問題整理</p>
 <h2>zoomit</h2>
